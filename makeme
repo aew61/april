@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# make build directory
+if [ ! -d "build" ]; then
+    mkdir build
+fi
+
+# build project
+cd build
+cmake ..
+make
+cd ..
+
